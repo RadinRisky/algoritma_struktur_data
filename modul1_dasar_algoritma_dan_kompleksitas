@@ -1,0 +1,98 @@
+# for looping
+n = int(input("masukkan nilai n : "))
+for i in range (n):
+    print (i)
+
+n = int(input("masukkan nilai n :"))
+for i in range (1, n):
+    print (i)
+
+# while looping
+i = 1
+while i <= 5:
+    print (i)
+    i += 1
+
+# nested loop
+n = int(input("masukkan nilai n :"))
+for i in range (1, n):
+    for j in range (1, n):
+        print (i)
+
+n = int(input("masukkan nilai n :"))
+for i in range(n):
+    for j in range(1, n):
+        print (j, end=" ")
+    print ()
+
+# if else
+nilai = int(input("masukkan nilai :"))
+nilai_minimal_kelulusan = 75
+
+if nilai >= nilai_minimal_kelulusan :
+    print ("Lulus")
+else:
+    print ("Tidak Lulus")
+
+# triangle left alignment
+n = int(input("masukkan jumlah baris :"))
+for i in range (1, n + 1):
+    for j in range (i):
+        print ("*", end = " ")
+    print ()
+
+# menentukan bilangan terbesar dari 3 angka
+a = int(input("masukkan angka 1 :"))
+b = int(input("masukkan angka 2 :"))
+c = int(input("masukkan angka 3 :"))
+
+if a>= b and a >= c:
+    terbesar = a
+elif b >= a and b >= c:
+    terbesar = b
+else:
+    terbesar = c
+print ("Terbesar :", terbesar)
+
+# menentukan bilangan ganjil atau genap
+n = int(input("masukkan angka :"))
+if n % 2 == 0:
+    print ("Genap")
+else:
+    print ("Ganjil")
+
+# menentukan bilangan prima
+n = int(input("masukkan angka :"))
+if n <= 1 :
+    print ("bukan bilangan prima")
+else:
+    is_prima = True
+    for i in range (2, n):
+        if n % i == 0 :
+            is_prima = False
+            break
+    if is_prima :
+       print ("bilangan prima")
+    else:
+        print ("bukan bilangan prima")
+
+# STUDI KASUS 
+# menentukan nilai maksimum dalam sebuah array
+A = [3, 7, 2, 9, 5]
+max = A[0]
+for i in range (1, 5):
+    if A[i] > max :
+        max = A[i]
+print ("Nilai Maksimum :", max)
+
+# menentukan list bilangan prima
+n = int(input("masukkan angka :"))
+angka = list(range(n + 1))
+for i in range (2, n + 1):
+    for j in range (2, i):
+        if i % j == 0:
+            angka[i] = 0
+print ("Bilangan Prima :")
+for i in range (2, n + 1):
+    if angka[i] != 0:
+        print (i, end = " ")
