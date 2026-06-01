@@ -1,3 +1,12 @@
+(for looping)
+PSEUDOCODE:
+Begin
+N = 5
+for i = n
+for i = 1 to N
+Print i
+END for
+END
 # for looping
 n = int(input("masukkan nilai n : "))
 for i in range (n):
@@ -6,13 +15,30 @@ for i in range (n):
 n = int(input("masukkan nilai n :"))
 for i in range (1, n):
     print (i)
-
+(while looping)
+PSEUDOCODE:
+Begin
+SET i = 1 (batas bawah atau perulangan dimulai)
+SET n = 5 (batas atas)
+WHILE i <= n (ini disebut dgn stop kriteria pada while)
+PRINT i 
+i = i + 1
+END WHILE
+END
 # while looping
 i = 1
 while i <= 5:
     print (i)
     i += 1
-
+(nested loop)
+PSEUDOCODE:
+Begin
+n = 5
+for i = 1 to n
+for j = 1 to n
+print j
+END for
+END
 # nested loop
 n = int(input("masukkan nilai n :"))
 for i in range (1, n):
@@ -24,7 +50,17 @@ for i in range(n):
     for j in range(1, n):
         print (j, end=" ")
     print ()
-
+(if else)
+PSEUDOCODE:
+BEGIN
+ INPUT kondisi
+IF nilai >= kondisi
+THEN 
+PRINT "Lulus"
+ELSE
+PRINT "Tidak Lulus"
+END IF
+END
 # if else
 nilai = int(input("masukkan nilai :"))
 nilai_minimal_kelulusan = 75
@@ -33,14 +69,37 @@ if nilai >= nilai_minimal_kelulusan :
     print ("Lulus")
 else:
     print ("Tidak Lulus")
-
+(triangle left alignment)
+PSEUDOCODE:
+BEGIN
+input n
+for i = 1 to n
+for j = 1 to n
+print "*"
+print newline
+END FOR
+END
 # triangle left alignment
 n = int(input("masukkan jumlah baris :"))
 for i in range (1, n + 1):
     for j in range (i):
         print ("*", end = " ")
     print ()
-
+(menentukan bilangan terbesar dari 3 angka)
+PSEUDOCODE:
+BEGIN
+input a, b, c
+IF a >= b AND a >= c THEN
+max = a
+ELSE IF b >= a AND b >= c
+THEN
+max = b
+END IF
+ELSE
+max = c
+END IF
+PRINT max
+END
 # menentukan bilangan terbesar dari 3 angka
 a = int(input("masukkan angka 1 :"))
 b = int(input("masukkan angka 2 :"))
@@ -53,14 +112,33 @@ elif b >= a and b >= c:
 else:
     terbesar = c
 print ("Terbesar :", terbesar)
-
+(menentukan bilangan ganjil genap)
+PSEUDOCODE:
+BEGIN
+input n
+IF n MOD 2 == 2 THEN
+print "genap"
+ELSE
+print "ganjil"
+END IF
+END
 # menentukan bilangan ganjil atau genap
 n = int(input("masukkan angka :"))
 if n % 2 == 0:
     print ("Genap")
 else:
     print ("Ganjil")
-
+(menentukan bilangan prima)
+PSEUDOCODE:
+BEGIN
+input n
+IF n <= 1 THEN 
+PRINT "bukan prima"
+STOP
+END FOR
+PRINT "bilangan prima"
+END IF
+END
 # menentukan bilangan prima
 n = int(input("masukkan angka :"))
 if n <= 1 :
@@ -76,23 +154,3 @@ else:
     else:
         print ("bukan bilangan prima")
 
-# STUDI KASUS 
-# menentukan nilai maksimum dalam sebuah array
-A = [3, 7, 2, 9, 5]
-max = A[0]
-for i in range (1, 5):
-    if A[i] > max :
-        max = A[i]
-print ("Nilai Maksimum :", max)
-
-# menentukan list bilangan prima
-n = int(input("masukkan angka :"))
-angka = list(range(n + 1))
-for i in range (2, n + 1):
-    for j in range (2, i):
-        if i % j == 0:
-            angka[i] = 0
-print ("Bilangan Prima :")
-for i in range (2, n + 1):
-    if angka[i] != 0:
-        print (i, end = " ")
