@@ -1,0 +1,54 @@
+# STUDI KASUS 
+(menentukan nilai maksimum dalam sebuah array)
+PSEUDOCODE:
+BEGIN 
+input A
+max = A[0]
+FOR i = 1 to panjang (A) -1
+IF A[i] > max THEN
+max = A[i]
+END IF
+END FOR
+PRINT max
+END
+# menentukan nilai maksimum dalam sebuah array
+A = [3, 7, 2, 9, 5]
+max = A[0]
+for i in range (1, 5):
+    if A[i] > max :
+        max = A[i]
+print ("Nilai Maksimum :", max)
+(menentukan list bilangan prima)
+PSEUDOCODE:
+BEGIN
+input n
+angka = [] (buat list kosong : prima)
+FOR i = 2 to n
+status = True
+FOR j = 2 to i-1
+IF i MOD j ==0
+status = False
+keluar dari loop
+IF status == True
+ADD i ke list prima
+print "list prima"
+END
+(menentukan list bilangan prima)
+PSEUDOCODE:
+BEGIN
+input n
+buat list kosong : prima
+untuk i dari 2 sampai n:
+status = True
+untuk j dari 2 sampai 
+# menentukan list bilangan prima
+n = int(input("masukkan angka :"))
+angka = list(range(n + 1))
+for i in range (2, n + 1):
+    for j in range (2, i):
+        if i % j == 0:
+            angka[i] = 0
+print ("Bilangan Prima :")
+for i in range (2, n + 1):
+    if angka[i] != 0:
+        print (i, end = " ")
