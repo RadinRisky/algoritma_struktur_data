@@ -1,1 +1,14 @@
+(stack untuk membalik kata)
+PSEUDOCODE:
+mulai
+input masukkan kata:
+input kata
+stack kosong[]
+perulangan huruf dari input kata
+tambahkan variable huruf ke stack
+while stack
+hasil += stack.pop()
+mengambil huruf terakhir dari stack
+tampilkan ("kata di balik :"), hasil
+selesai
 
